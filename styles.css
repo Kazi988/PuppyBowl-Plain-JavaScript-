@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-color: aliceblue;
+  }
+  img {
+    width: 160px;
+    height: 235.2px;
+    display: flex;
+    align-self: center;
+    transition: opacity 0.4s, transform 1s, border 1s;
+  }
+  
+  img:hover {
+    opacity: 0.5;
+    border-style: solid;
+    border-color: aliceblue;
+    transform: scale(0.9);
+  }
+  
+  .delete-button, .detail-button, #see-all {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    transition: opacity 0.2s;
+    font-size: .9em;
+  }
+  
+  .delete-button {
+    font-weight: 600;
+    background-color: rgba(201, 22, 12, 0.5);
+    border: solid rgba(100, 13, 13, 0.319);
+  }
+  
+  .delete-button:hover, .detail-button:hover, #see-all:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    color: rgba(196, 16, 16, 0.933);
+  }
+  
+  .detail-button, #see-all {
+    background-color: rgb(227, 215, 196);
+    margin-bottom: 3px;
+    border: solid rgb(145, 137, 124)
+  }
+  
+  .detail-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    color:rgb(210, 130, 11);;
+  }
+  
+  #submit-button {
+    border-radius: 5px;
+    padding: 5px;
+    border: solid rgb(35, 34, 34);
+    border-width: 1px;
+    margin-top: 1px;
+    background-color: rgb(111, 173, 111);
+    transition: color 0.3s;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+  }
+  
+  #submit-button:hover {
+    cursor: pointer;
+    opacity: 0.98;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #name, #breed, #imageUrl, #team {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #name:focus::placeholder, #breed:focus::placeholder, 
+  #imageUrl:focus::placeholder, #team:focus::placeholder {
+    color: transparent;
+  }
+  
+  #all-players-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .player-card {
+    flex-basis: 200px;
+    flex-grow: 1;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(39, 74, 102, 0.5);
+    max-width: 209.6px;
+    height: 335.2px;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+  }
+  .player-card::-webkit-scrollbar{
+    display: none;
+  }
+  .single-player-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8em;
+    margin-bottom: 5em;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px 0px;
+    background-color: rgba(39, 74, 102, 0.5);
+    padding: 1.5em 2.5em 2em 2.5em;
+  }
+  .header-info, .player-detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.8em;
+    text-shadow: 1px 0.5px rgba(248, 236, 0, 0.362);
+  }
+  #see-all {
+    margin-top: 20px;
+    width: 10em;
+  }
+  #see-all:hover {
+    color: rgba(0, 76, 255, 0.94);
+    opacity: 0.9;
+  }
+  /* html{
+    font-family: Arial, Helvetica, sans-serif;
+  } */
